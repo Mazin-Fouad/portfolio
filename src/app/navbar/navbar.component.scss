@@ -1,0 +1,36 @@
+$navbar-bg: #141d2f;
+$navbar-fontColor: #ffff;
+$navbar-hoverLinks: #00bee8;
+$boder-bottomColor: #9747ff;
+
+nav {
+    background-color: $navbar-bg;
+    width: 100%;
+
+    @media (max-width: 992px) {
+        a {
+            width: 90px !important;
+        }
+    }
+
+    a {
+        color: $navbar-fontColor;
+        font-family: "Poppins";
+        font-weight: bold;
+        margin-left: 30px;
+
+        &:hover {
+            color: $navbar-hoverLinks;
+        }
+
+        &:focus,
+        &:active {
+            border-bottom: $boder-bottomColor 2px solid;
+            color: $navbar-hoverLinks;
+        }
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+}
