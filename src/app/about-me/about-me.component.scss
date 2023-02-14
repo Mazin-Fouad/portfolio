@@ -1,4 +1,59 @@
-p {
-    position: absolute;
-    z-index: 99999;
+.about-me {
+    overflow: hidden;
+    background-color: #141d2f;
+    color: #fff;
+
+    h1 {
+        font-weight: 700;
+        font-size: 5rem;
+    }
+
+    p {
+        max-width: 460px;
+    }
+}
+
+.text-field {
+    display: flex;
+    padding-bottom: 20px;
+
+    p {
+        padding-left: 10px;
+    }
+
+    img {
+        width: 40px;
+        height: 50px;
+        object-fit: contain;
+        padding-top: 10px;
+    }
+}
+
+.img-container {
+    position: relative;
+    .about-me-pic {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 100%;
+        border: 5px solid #4b47ff;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 5px;
+        background-color: #4b47ff;
+        right: -300px;
+        top: 200px;
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+
+    .container {
+        justify-content: center;
+    }
 }

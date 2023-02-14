@@ -157,7 +157,7 @@ section {
 }
 
 .links {
-    width: 100%;
+    width: 95%;
     bottom: 0;
     color: #fff;
     display: flex;
@@ -180,7 +180,7 @@ section {
 
     &::before {
         content: "";
-        width: 100px;
+        width: 260px;
         height: 4px;
         background-color: #4b47ff;
         border-radius: 5px;
