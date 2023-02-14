@@ -5,7 +5,11 @@ $second-fontColor: #4b47ff;
 section {
     background-color: $landing-section-bg !important;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: calc(100vh - 86px);
+}
+
+.container-fluid {
+    padding-left: 0;
 }
 
 .colorshader {
@@ -17,7 +21,7 @@ section {
 .hero {
     position: absolute;
     top: 40px;
-    left: 150px;
+    left: 5%;
 }
 
 .cut {
@@ -39,6 +43,28 @@ section {
         font-weight: 700;
         font-size: 90px;
         line-height: 120%;
+
+        @media (min-width: 270px) and (max-width: 479px) {
+            font-size: 30px;
+            white-space: nowrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 480px) and (max-width: 767px) {
+            font-size: 50px;
+            white-space: nowrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 50px;
+        }
+
+        @media (min-width: 993px) and (max-width: 1255px) {
+            font-size: 50px;
+        }
     }
 
     h3 {
@@ -47,12 +73,56 @@ section {
         line-height: 120%;
         color: #6865f5;
         text-transform: uppercase;
+
+        @media (min-width: 270px) and (max-width: 479px) {
+            font-size: 18px;
+            white-space: nowrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 480px) and (max-width: 767px) {
+            font-size: 30px;
+            white-space: nowrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 40px;
+        }
+
+        @media (min-width: 993px) and (max-width: 1255px) {
+            font-size: 35px;
+        }
     }
 
     span {
         font-weight: 400;
         font-size: 80px;
         line-height: 250%;
+
+        @media (min-width: 270px) and (max-width: 479px) {
+            font-size: 30px;
+            white-space: nowrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 480px) and (max-width: 767px) {
+            font-size: 40px;
+            white-space: nowrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 35px;
+        }
+
+        @media (min-width: 993px) and (max-width: 1255px) {
+            font-size: 40px;
+        }
     }
 }
 
@@ -119,12 +189,126 @@ section {
 
 .scroll-container {
     margin-left: auto;
-    margin-right: 20px;
-    margin-top: -150px;
+    margin-right: 10px;
     transform: rotate(90deg);
+    padding-top: -50px;
+    padding-bottom: 125px;
 
     img {
         transform: rotate(-90deg);
         cursor: pointer;
+    }
+}
+
+@media (min-width: 270px) and (max-width: 479px) {
+    .hero {
+        left: -50%;
+    }
+
+    .btn-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        white-space: nowrap;
+        margin-bottom: 10px;
+    }
+
+    .main-text {
+        margin-top: 820px;
+        margin-bottom: 190px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .scroll-container {
+        span {
+            white-space: nowrap;
+            font-size: 16px;
+            margin-left: -35px;
+        }
+    }
+
+    .links {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons-container {
+        margin-left: auto;
+        margin-right: auto;
+
+        a {
+            font-size: 20px;
+
+            span {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .hero {
+        left: -10%;
+    }
+
+    .main-text {
+        margin-top: 820px;
+        margin-bottom: 190px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .scroll-container {
+        span {
+            white-space: nowrap;
+            font-size: 16px;
+        }
+    }
+
+    .links {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons-container {
+        span {
+            font-size: 20px;
+            margin-left: 5px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero {
+        left: -10%;
+    }
+
+    .main-text {
+        margin-top: 820px;
+        margin-bottom: 190px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    .scroll-container {
+        span {
+            white-space: nowrap;
+            font-size: 16px;
+        }
+    }
+
+    .links {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons-container {
+        span {
+            font-size: 16px;
+        }
     }
 }
