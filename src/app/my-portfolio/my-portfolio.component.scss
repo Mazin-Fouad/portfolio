@@ -1,0 +1,62 @@
+.my-portfolio {
+    background-color: #141d2f;
+    padding: 50px 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    h1 {
+        font-size: 6rem;
+        font-family: "Poppins-bold";
+        white-space: nowrap;
+        font-weight: bold;
+        position: relative;
+
+        @media (min-width: 270px) and (max-width: 479px) {
+            font-size: 3rem;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 10%;
+            height: 5px;
+            background-color: #4b47ff;
+            left: 25%;
+            transform: translateX(-50%);
+            top: 50%;
+
+            @media (min-width: 270px) and (max-width: 479px) {
+                display: none;
+            }
+
+            @media (min-width: 479px) and (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 55%;
+            height: 5px;
+            background-color: #4b47ff;
+            right: -25%;
+            margin: auto;
+            top: 50%;
+
+            @media (min-width: 270px) and (max-width: 479px) {
+                width: 33%;
+            }
+
+            @media (min-width: 479px) and (max-width: 991px) {
+                width: 30%;
+            }
+        }
+    }
+
+    p {
+        font-weight: 600;
+    }
+}

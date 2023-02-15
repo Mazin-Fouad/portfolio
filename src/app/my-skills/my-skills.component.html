@@ -1,12 +1,18 @@
-<div class="my-skills">
+<div class="my-skills" id="my-skills">
+  <img
+    class="blue-spot"
+    src="assets/imgs/my-skills-imgs/L. blue 1.png"
+    alt=""
+  />
   <div class="container">
     <div class="my-skills-container">
       <div class="icon-box" *ngFor="let skill of mySkills">
         <img src="assets/imgs/my-skills-imgs/{{ skill.img }}" />
         <span>{{ skill.title }}</span>
       </div>
-    </div>
 
+      <a href="#" class="second-btn">Get in touch</a>
+    </div>
     <div class="my-skills-text">
       <h1>My Skills</h1>
       <p>
@@ -14,7 +20,7 @@
         proficiency in frontend development, which has empowered me to
         successfully execute diverse projects.
       </p>
-      <a href="#">Get in touch</a>
+      <a href="#" class="first-btn">Get in touch</a>
     </div>
   </div>
 </div>
