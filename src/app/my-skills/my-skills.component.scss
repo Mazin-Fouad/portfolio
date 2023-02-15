@@ -25,6 +25,7 @@
         align-items: center;
         padding-right: 130px;
         margin-bottom: 25px;
+        font-weight: 600;
     }
 }
 
@@ -40,6 +41,7 @@
 
     h1 {
         font-size: 6rem;
+        font-family: "Poppins-bold";
         white-space: nowrap;
         font-weight: bold;
         position: relative;
@@ -47,12 +49,37 @@
         &::after {
             content: "";
             position: absolute;
-            width: 450px;
+            width: 350px;
             height: 5px;
             right: -515px;
             top: 50%;
-            background-color: blue;
+            background-color: #4b47ff;
         }
+    }
+
+    p {
+        font-weight: 600;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        padding: 15px 30px;
+        background-color: #00bee8;
+        font-weight: 600;
+        border-radius: 10px;
+
+        &:hover {
+            transition: all 225ms ease-in-out;
+            transform: scale(1.1);
+            background-color: #4b47ff;
+        }
+    }
+}
+
+.icon-box {
+    img {
+        margin-bottom: 10px;
     }
 }
 
@@ -75,5 +102,33 @@
     }
     100% {
         transform: translate(0, 0);
+    }
+}
+
+@media (min-width: 270px) and (max-width: 991px) {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .my-skills-container {
+        max-width: unset;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+        }
     }
 }

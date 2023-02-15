@@ -6,9 +6,15 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url("./assets/fonts/Poppins-Thin.ttf") format("woff2");
+    src: url("./assets/fonts/Poppins-ExtraLight.ttf") format("woff2");
+    font-weight: normal;
 }
 
-// body {
-//     overflow: hidden;
-// }
+@font-face {
+    font-family: "Poppins-bold";
+    src: url("assets/fonts/Poppins-Bold.ttf") format("woff2");
+}
+
+body {
+    font-family: "Poppins" !important;
+}

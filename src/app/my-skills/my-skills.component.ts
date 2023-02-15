@@ -17,7 +17,7 @@ export class MySkillsComponent {
     },
     {
       img: 'Javascript.png',
-      title: 'javaScript',
+      title: 'JavaScript',
     },
     {
       img: 'html.png',

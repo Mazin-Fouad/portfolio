@@ -6,6 +6,7 @@ section {
     background-color: $landing-section-bg !important;
     overflow: hidden;
     min-height: calc(100vh - 86px);
+    padding: 50px 0;
 }
 
 .container-fluid {
@@ -40,9 +41,10 @@ section {
     position: relative;
 
     h1 {
-        font-weight: 700;
+        font-family: "Poppins-bold";
         font-size: 90px;
         line-height: 120%;
+        font-weight: bold;
 
         @media (min-width: 270px) and (max-width: 479px) {
             font-size: 30px;
@@ -73,6 +75,7 @@ section {
         line-height: 120%;
         color: #6865f5;
         text-transform: uppercase;
+        font-weight: bold;
 
         @media (min-width: 270px) and (max-width: 479px) {
             font-size: 18px;
@@ -98,9 +101,9 @@ section {
     }
 
     span {
-        font-weight: 400;
-        font-size: 80px;
+        font-size: 65px;
         line-height: 250%;
+        font-weight: bold;
 
         @media (min-width: 270px) and (max-width: 479px) {
             font-size: 30px;
@@ -173,7 +176,7 @@ section {
 
     span {
         font-size: 23px;
-        font-weight: 400;
+        font-weight: 600;
         margin-left: 5px;
         text-decoration: none;
     }

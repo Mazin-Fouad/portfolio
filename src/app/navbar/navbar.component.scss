@@ -19,6 +19,7 @@ nav {
         font-weight: bold;
         font-size: 23px;
         margin-left: 30px;
+        white-space: nowrap;
 
         &:hover {
             color: $navbar-hoverLinks;
