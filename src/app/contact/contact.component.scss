@@ -1,0 +1,40 @@
+section {
+    background-color: #141d2f;
+    padding: 50px 0;
+    color: #fff;
+    overflow: hidden;
+
+    h1 {
+        font-weight: 600;
+        font-family: "Poppins-bold";
+        font-size: 6em;
+    }
+
+    h2 {
+        font-family: "Poppins-bold";
+    }
+
+    p {
+        font-weight: 600;
+        max-width: 75%;
+    }
+
+    span {
+        font-family: "Poppins-bold";
+    }
+
+    input,
+    textarea {
+        background-color: transparent;
+        border: none;
+        border: 1px solid #4b47ff;
+        &:focus {
+            box-shadow: unset;
+            border: 1px solid #00bee8;
+        }
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+}

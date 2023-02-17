@@ -3,6 +3,7 @@
     padding: 50px 0;
     color: #fff;
     overflow: hidden;
+    position: relative;
 }
 
 .container {
@@ -34,6 +35,10 @@
             @media (min-width: 479px) and (max-width: 991px) {
                 display: none;
             }
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                display: none;
+            }
         }
 
         &::after {
@@ -53,10 +58,24 @@
             @media (min-width: 479px) and (max-width: 991px) {
                 width: 30%;
             }
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                display: none;
+            }
         }
     }
 
     p {
         font-weight: 600;
+    }
+}
+
+.blue-effect {
+    position: absolute;
+    bottom: 20%;
+    height: 600px;
+
+    @media (min-width: 270px) and (max-width: 991px) {
+        display: none;
     }
 }

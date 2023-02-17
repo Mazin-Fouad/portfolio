@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -9,6 +8,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { ProjectBoxComponent } from './project-box/project-box.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,11 @@ import { ProjectBoxComponent } from './project-box/project-box.component';
     AboutMeComponent,
     MySkillsComponent,
     MyPortfolioComponent,
-    ProjectBoxComponent
+    ProjectBoxComponent,
+    ContactComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

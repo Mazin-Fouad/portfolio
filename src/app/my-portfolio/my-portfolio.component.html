@@ -5,10 +5,14 @@
       This page is a sample of my Work - please feel free to try them out.
     </p>
   </div>
-
+  <img
+    class="blue-effect"
+    src="assets/imgs/portfolio-section-imgs/d.blue2.png"
+    alt=""
+  />
   <app-project-box
     *ngFor="let item of myProjects; let i = index"
-    [ngStyle]="{ 'bottom.px': 100 + i * 70 }"
     [project]="item"
+    [loopIndex]="i"
   ></app-project-box>
 </section>

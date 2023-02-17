@@ -27,21 +27,11 @@ export class MyPortfolioComponent {
     },
 
     {
-      title: 'El Pollo Loco',
-      code: 'HTML | CSS | JavaScript',
+      title: 'Ring Of Fire',
+      code: 'Angular | Typescript | HTML | Scss | Firebase',
       description:
-        ' Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      img: 'assets/imgs/project-box-imgs/Pollo-loco .png',
-      link: '#',
-      gitHub: 'https://github.com/Mazin-Fouad/el_pollo_loco',
-    },
-
-    {
-      title: 'El Pollo Loco',
-      code: 'HTML | CSS | JavaScript',
-      description:
-        ' Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      img: 'assets/imgs/project-box-imgs/Pollo-loco .png',
+        'A popular drinking game, you have to choose a card from the card stack and implement what appears to you in the text.',
+      img: 'assets/imgs/project-box-imgs/ring-of-fire.png',
       link: '#',
       gitHub: 'https://github.com/Mazin-Fouad/el_pollo_loco',
     },

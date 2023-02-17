@@ -1,12 +1,17 @@
 <section>
   <div class="container">
-    <div class="project-box">
+    <div class="project-box" [ngClass]="{ odd: loopIndex % 2 == 0 }">
       <img src="{{ project.img }}" />
 
       <div class="project-text d-flex flex-column">
-        <h2>{{ project.title }}</h2>
-        <span>{{ project.code }}</span>
-        <span>{{ project.description }}</span>
+        <h1 class="mb-2">{{ project.title }}</h1>
+        <h2 class="mb-2">{{ project.code }}</h2>
+        <span class="mb-2">{{ project.description }}</span>
+
+        <div class="projcet-links">
+          <a class="live-test" href="#">Live test</a>
+          <a class="github" href="#">Github</a>
+        </div>
       </div>
     </div>
   </div>

@@ -1,13 +1,83 @@
 .project-box {
     display: flex;
     justify-content: space-between;
-    gap: 10%;
+    gap: 15%;
     align-items: center;
+
     img {
-        width: 420px;
+        width: 400px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-family: "Poppins-bold";
+        color: #4b47ff;
+    }
+
+    h2 {
+        color: #00bee8;
+    }
+
+    span {
+        font-weight: 600;
     }
 }
 
-.container .project-box:nth-child(even) {
+.odd {
     flex-direction: row-reverse;
+}
+
+@media (min-width: 270px) and (max-width: 991px) {
+    .project-box {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.projcet-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15%;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+    }
+}
+
+.projcet-links .live-test {
+    background-color: #4b47ff;
+    padding: 15px 30px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #00bee8;
+        transition: all ease-in-out 225ms;
+    }
+
+    @media (min-width: 270px) and (max-width: 479px) {
+        padding: 10px 20px;
+        white-space: nowrap;
+    }
+}
+
+.projcet-links .github {
+    border: #00bee8 1px solid;
+    padding: 15px 30px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #00bee8;
+        transition: all ease-in-out 225ms;
+    }
+
+    @media (min-width: 270px) and (max-width: 479px) {
+        padding: 10px 20px;
+    }
 }
