@@ -19,3 +19,43 @@ body {
     font-family: "Poppins" !important;
     scroll-behavior: smooth;
 }
+
+/* Define the styles for the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Define the thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #00bee8;
+    border-radius: 5px;
+}
+
+/* Define the track */
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+/* Define the corner */
+::-webkit-scrollbar-corner {
+    background-color: #f5f5f5;
+}
+
+/* Hide scrollbar when not scrolling */
+::-webkit-scrollbar-thumb:vertical {
+    height: 10px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+    width: 10px;
+}
+
+/* Define hover styles for the thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6260f3;
+}
+
+/* Define active styles for the thumb */
+::-webkit-scrollbar-thumb:active {
+    background-color: #4b47ff;
+}

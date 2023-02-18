@@ -1,6 +1,7 @@
 section {
     background-color: #141d2f;
-    padding: 50px 0;
+    padding-top: 100px;
+    padding-bottom: 60px;
     color: #fff;
     border-top: 5px solid #00bee8;
 
@@ -28,6 +29,30 @@ section {
         span {
             color: #00bee8;
             font-weight: bolder;
+        }
+    }
+}
+
+.imprint {
+    a {
+        border-bottom: 2px solid transparent;
+        transition: all 225ms ease-in-out;
+
+        &:hover {
+            border-bottom: 2px solid #00bee8;
+            transition: all 225ms ease-in-out;
+        }
+    }
+}
+
+.links {
+    a {
+        margin-left: 20px;
+    }
+    img {
+        &:hover {
+            transform: scale(1.2);
+            transition: all 225ms ease-in-out;
         }
     }
 }
