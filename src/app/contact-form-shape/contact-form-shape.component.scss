@@ -1,0 +1,37 @@
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    border: 1px solid #4b47ff;
+    &:focus {
+        box-shadow: unset;
+        background-color: transparent;
+        border: 1px solid #00bee8;
+    }
+
+    &::placeholder {
+        color: #fff;
+    }
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    button {
+        all: unset;
+        cursor: pointer;
+        padding: 15px 30px;
+        background-color: #00bee8;
+        border-radius: 10px;
+        transition: all 225ms ease-in-out;
+        font-weight: 600;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 225ms ease-in-out;
+            background-color: #4b47ff;
+        }
+    }
+}

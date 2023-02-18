@@ -68,21 +68,6 @@ section {
         font-family: "Poppins-bold";
     }
 
-    input,
-    textarea {
-        background-color: transparent;
-        border: none;
-        border: 1px solid #4b47ff;
-        &:focus {
-            box-shadow: unset;
-            border: 1px solid #00bee8;
-        }
-
-        &::placeholder {
-            color: #fff;
-        }
-    }
-
     img {
         border: 2px solid #fff;
         padding: 10px;

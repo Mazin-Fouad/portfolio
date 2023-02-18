@@ -10,6 +10,7 @@ import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { ProjectBoxComponent } from './project-box/project-box.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
+import { ContactFormShapeComponent } from './contact-form-shape/contact-form-shape.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContactComponent } from './contact/contact.component';
     MyPortfolioComponent,
     ProjectBoxComponent,
     ContactComponent,
+    ContactFormShapeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
