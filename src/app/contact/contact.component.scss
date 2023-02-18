@@ -5,18 +5,63 @@ section {
     overflow: hidden;
 
     h1 {
+        position: relative;
         font-weight: 600;
         font-family: "Poppins-bold";
         font-size: 6em;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-color: #4b47ff;
+            left: -25%;
+            top: 50%;
+            width: 2.5em;
+            height: 5px;
+
+            @media (min-width: 270px) and (max-width: 479px) {
+                display: none;
+            }
+
+            @media (min-width: 480px) and (max-width: 991px) {
+                width: 2em;
+            }
+        }
+
+        @media (min-width: 270px) and (max-width: 479px) {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        @media (min-width: 480px) and (max-width: 991px) {
+            text-align: center;
+        }
     }
 
     h2 {
         font-family: "Poppins-bold";
+        @media (min-width: 270px) and (max-width: 479px) {
+            text-align: center;
+        }
+
+        @media (min-width: 479px) and (max-width: 991px) {
+            text-align: center;
+        }
     }
 
     p {
         font-weight: 600;
         max-width: 75%;
+
+        @media (min-width: 270px) and (max-width: 479px) {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        @media (min-width: 479px) and (max-width: 991px) {
+            max-width: 100%;
+            text-align: center;
+        }
     }
 
     span {
@@ -36,5 +81,13 @@ section {
         &::placeholder {
             color: #fff;
         }
+    }
+
+    img {
+        border: 2px solid #fff;
+        padding: 10px;
+        border-radius: 50%;
+        right: 5%;
+        cursor: pointer;
     }
 }
