@@ -1,8 +1,11 @@
 input,
 textarea {
+    color: #fff !important;
+    font-weight: 600;
     background-color: transparent;
     border: none;
     border: 1px solid #4b47ff;
+
     &:focus {
         box-shadow: unset;
         background-color: transparent;

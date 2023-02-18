@@ -11,6 +11,7 @@ import { ProjectBoxComponent } from './project-box/project-box.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
 import { ContactFormShapeComponent } from './contact-form-shape/contact-form-shape.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ContactFormShapeComponent } from './contact-form-shape/contact-form-sha
     ProjectBoxComponent,
     ContactComponent,
     ContactFormShapeComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
