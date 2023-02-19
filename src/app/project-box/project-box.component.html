@@ -1,7 +1,11 @@
 <section>
   <div class="container">
     <div class="project-box" [ngClass]="{ odd: loopIndex % 2 == 0 }">
-      <img src="{{ project.img }}" />
+      <img
+        data-aos="flip-up"
+        data-aos-duration="2000"
+        src="{{ project.img }}"
+      />
 
       <div class="project-text d-flex flex-column">
         <h1 class="mb-2">{{ project.title }}</h1>

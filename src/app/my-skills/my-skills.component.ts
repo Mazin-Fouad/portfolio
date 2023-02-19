@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-my-skills',
@@ -49,13 +50,15 @@ export class MySkillsComponent {
     },
   ];
 
-  private audioPlayer: HTMLAudioElement;
+  audioPlayer: HTMLAudioElement;
 
   constructor(private elementRef: ElementRef) {
     this.audioPlayer = new Audio('/assets/audio/hover-effect.mp3');
     this.audioPlayer.onended = () => {
       this.audioPlayer.remove();
     };
+
+    AOS.init();
   }
 
   playSound() {

@@ -56,3 +56,11 @@ section {
         }
     }
 }
+
+@media (min-width: 270px) and (max-width: 991px) {
+    .row {
+        div {
+            margin-bottom: 10px;
+        }
+    }
+}
