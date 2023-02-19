@@ -36,33 +36,4 @@ export class MyPortfolioComponent {
       gitHub: 'https://github.com/Mazin-Fouad/el_pollo_loco',
     },
   ];
-
-  isVisible: boolean = false;
-
-  containerRef: any;
-  observer: IntersectionObserver;
-
-  constructor(private elementRef: ElementRef) {}
-
-  ngOnInit() {
-    this.containerRef = this.elementRef.nativeElement.querySelector('#project');
-
-    this.observer = new IntersectionObserver((entries, observer) => {
-      this.callback(entries, observer);
-    });
-
-    this.observer.observe(this.containerRef);
-  }
-
-  callback(
-    entries: IntersectionObserverEntry[],
-    observer: IntersectionObserver
-  ) {
-    entries.forEach((entry: IntersectionObserverEntry) => {
-      if (entry.isIntersecting) {
-        this.isVisible = true;
-        observer.unobserve(entry.target);
-      }
-    });
-  }
 }

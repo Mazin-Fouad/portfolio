@@ -12,7 +12,6 @@
   />
   <app-project-box
     id="project"
-    [ngClass]="{ visible: isVisible }"
     *ngFor="let item of myProjects; let i = index"
     [project]="item"
     [loopIndex]="i"

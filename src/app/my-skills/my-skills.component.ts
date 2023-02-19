@@ -48,4 +48,18 @@ export class MySkillsComponent {
       title: 'Material Design',
     },
   ];
+
+  private audioPlayer: HTMLAudioElement;
+
+  constructor(private elementRef: ElementRef) {
+    this.audioPlayer = new Audio('/assets/audio/hover-effect.mp3');
+    this.audioPlayer.onended = () => {
+      this.audioPlayer.remove();
+    };
+  }
+
+  playSound() {
+    this.audioPlayer.currentTime = 0;
+    this.audioPlayer.play();
+  }
 }
