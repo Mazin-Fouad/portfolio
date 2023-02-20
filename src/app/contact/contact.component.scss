@@ -6,6 +6,14 @@ section {
     overflow: hidden;
     position: relative;
 
+    @media (min-width: 270px) and (max-width: 479px) {
+        padding-bottom: 150px;
+    }
+
+    @media (min-width: 480px) and (max-width: 991px) {
+        padding-bottom: 150px;
+    }
+
     h1 {
         position: relative;
         font-weight: 600;
@@ -26,7 +34,7 @@ section {
             }
 
             @media (min-width: 480px) and (max-width: 991px) {
-                width: 2em;
+                width: 1.6em;
             }
         }
 
@@ -58,11 +66,13 @@ section {
         @media (min-width: 270px) and (max-width: 479px) {
             max-width: 100%;
             text-align: center;
+            margin-bottom: 100px;
         }
 
         @media (min-width: 479px) and (max-width: 991px) {
             max-width: 100%;
             text-align: center;
+            margin-bottom: 100px;
         }
     }
 

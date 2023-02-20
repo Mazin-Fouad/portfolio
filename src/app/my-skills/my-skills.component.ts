@@ -52,7 +52,7 @@ export class MySkillsComponent {
 
   audioPlayer: HTMLAudioElement;
 
-  constructor(private elementRef: ElementRef) {
+  constructor() {
     this.audioPlayer = new Audio('/assets/audio/hover-effect.mp3');
     this.audioPlayer.onended = () => {
       this.audioPlayer.remove();

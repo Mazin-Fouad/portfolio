@@ -1,29 +1,39 @@
-<form action="" data-aos="fade-down" data-aos-duration="2000">
-  <div>
+<form (submit)="sendMail()" ngNativeValidate #contactForm>
+  <div *ngIf="!success">
     <div class="mb-3">
       <input
         type="name"
+        name="name"
         class="form-control mb-4"
-        id="exampleFormControlInput1"
         placeholder="Your Name"
+        required
+        #nameField
       />
       <input
         type="email"
+        name="email"
         class="form-control mb-4"
-        id="exampleFormControlInput1"
         placeholder="Your Email"
+        required
+        #mailField
       />
     </div>
     <div class="mb-4">
       <textarea
         class="form-control"
-        id="exampleFormControlTextarea1"
         rows="10"
+        name="message"
         placeholder="Your Message"
+        required
+        #messageField
       ></textarea>
     </div>
     <div class="btn-container">
-      <button class="btn-contact">Send message ;)</button>
+      <button #sendButton class="btn-contact">Send message ;)</button>
     </div>
+  </div>
+  <div *ngIf="success" class="alert alert-success mt-3">
+    <span> Message sent successfully!</span>
+    <span>I will contact you as soon as possible.</span>
   </div>
 </form>
