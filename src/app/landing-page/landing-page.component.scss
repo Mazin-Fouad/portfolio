@@ -22,8 +22,8 @@ section {
 
 .hero {
     position: absolute;
-    top: 40px;
-    left: 10%;
+    top: -2rem;
+    left: 3%;
 }
 
 .cut {
@@ -210,7 +210,7 @@ section {
 
 @media (min-width: 270px) and (max-width: 479px) {
     .hero {
-        left: -45%;
+        left: -17rem;
     }
 
     .colorshader {
@@ -273,7 +273,7 @@ section {
 
 @media (min-width: 480px) and (max-width: 767px) {
     .hero {
-        left: -10%;
+        left: -10rem;
     }
 
     .main-text {
