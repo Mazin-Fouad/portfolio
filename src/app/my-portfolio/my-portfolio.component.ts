@@ -13,7 +13,7 @@ export class MyPortfolioComponent {
       description:
         'Task Manager inspired by the Kanban System create and organize tasks using drag and drop functions, assign users and categories.',
       img: 'assets/imgs/project-box-imgs/join.png',
-      link: '#',
+      link: 'https://mazinfouad.com/Join/login.html',
       gitHub: 'https://github.com/Mazin-Fouad/Join',
     },
     {
@@ -22,7 +22,7 @@ export class MyPortfolioComponent {
       description:
         ' Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       img: 'assets/imgs/project-box-imgs/Pollo-loco .png',
-      link: '#',
+      link: 'https://mazinfouad.com/el_pollo_loco/',
       gitHub: 'https://github.com/Mazin-Fouad/el_pollo_loco',
     },
 
@@ -32,7 +32,7 @@ export class MyPortfolioComponent {
       description:
         'A popular drinking game, you have to choose a card from the card stack and implement what appears to you in the text.',
       img: 'assets/imgs/project-box-imgs/ring-of-fire.png',
-      link: '#',
+      link: 'https://mazinfouad.com/ringoffire/',
       gitHub: 'https://github.com/Mazin-Fouad/el_pollo_loco',
     },
   ];

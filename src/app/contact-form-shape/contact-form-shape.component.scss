@@ -44,4 +44,17 @@ textarea {
     font-family: "Poppins-bold";
     display: flex;
     flex-direction: column;
+    animation: zoom-in-zoom-out 1s ease;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
 }

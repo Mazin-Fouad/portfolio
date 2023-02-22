@@ -6,13 +6,18 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url("./assets/fonts/Poppins-ExtraLight.ttf") format("woff2");
+    src: url("assets/fonts/Poppins-ExtraLight.ttf") format("woff2");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Poppins-bold";
     src: url("assets/fonts/Poppins-Bold.ttf") format("woff2");
+}
+
+@font-face {
+    font-family: "logo-font";
+    src: url("assets/fonts/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf") format("woff2");
 }
 
 body {

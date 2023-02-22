@@ -45,8 +45,8 @@ export class ContactFormShapeComponent implements OnInit {
     sendButton.disabled = false;
     this.success = true;
 
-    setTimeout(() => {
-      this.success = false;
-    }, 4000);
+    // setTimeout(() => {
+    //   this.success = false;
+    // }, 4000);
   }
 }
