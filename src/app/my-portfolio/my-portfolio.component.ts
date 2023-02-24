@@ -33,7 +33,7 @@ export class MyPortfolioComponent {
         'A popular drinking game, you have to choose a card from the card stack and implement what appears to you in the text.',
       img: 'assets/imgs/project-box-imgs/ring-of-fire.png',
       link: 'https://mazinfouad.com/ringoffire/',
-      gitHub: 'https://github.com/Mazin-Fouad/el_pollo_loco',
+      gitHub: 'https://github.com/Mazin-Fouad/ringoffire',
     },
   ];
 }

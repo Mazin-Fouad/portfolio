@@ -91,38 +91,6 @@ section {
     }
 }
 
-.shake-vertical {
-    animation-name: shake-vertical;
-    animation-duration: 10s; /* Animation duration is 120 seconds (2 minutes) */
-    animation-timing-function: linear; /* Animation timing is linear */
-    animation-iteration-count: infinite; /* Animation repeats infinitely */
-    animation-iteration-count: 2, 0, infinite;
-}
-
-@keyframes shake-vertical {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-    10%,
-    30%,
-    50%,
-    70% {
-        transform: translateY(-8px);
-    }
-    20%,
-    40%,
-    60% {
-        transform: translateY(8px);
-    }
-    80% {
-        transform: translateY(6.4px);
-    }
-    90% {
-        transform: translateY(-6.4px);
-    }
-}
-
 .blue-effect {
     position: absolute;
     bottom: 0;

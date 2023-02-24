@@ -30,6 +30,7 @@ textarea {
         border-radius: 10px;
         transition: all 225ms ease-in-out;
         font-weight: 600;
+        z-index: 9999;
 
         &:hover {
             transform: scale(1.1);
