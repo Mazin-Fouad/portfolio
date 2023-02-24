@@ -20,13 +20,10 @@ nav {
         font-size: 23px;
         margin-left: 30px;
         white-space: nowrap;
-
-        &:hover {
-            color: $navbar-hoverLinks;
-        }
+        border-bottom: transparent 2px solid;
 
         &:focus,
-        &:active {
+        &:hover {
             border-bottom: $boder-bottomColor 2px solid;
             color: $navbar-hoverLinks;
         }
@@ -37,6 +34,7 @@ nav {
     }
 
     .navbar-brand {
+        animation: bounce-top 0.9s ease-in-out;
         font-size: 2.5rem;
         letter-spacing: 5px !important;
         color: $navbar-fontColor;
@@ -50,4 +48,47 @@ nav {
             font-weight: bolder;
         }
     }
+}
+
+@keyframes bounce-top {
+    0% {
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateY(-12px);
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+
+.active {
+    color: #00bee8 !important;
 }

@@ -17,13 +17,14 @@ section {
 .colorshader {
     position: absolute;
     top: 100px;
-    left: 35px;
+    left: 60px;
 }
 
 .hero {
     position: absolute;
-    top: -2rem;
-    left: 3%;
+    top: 1rem;
+    left: 8%;
+    height: 800px;
 }
 
 .cut {
@@ -43,7 +44,7 @@ section {
 
     h1 {
         font-family: "Poppins-bold";
-        font-size: 87px;
+        font-size: 100px;
         line-height: 120%;
         font-weight: bold;
 
@@ -73,7 +74,7 @@ section {
 
     h3 {
         font-weight: 400;
-        font-size: 55px;
+        font-size: 63px;
         line-height: 120%;
         color: #6865f5;
         text-transform: uppercase;
@@ -104,8 +105,8 @@ section {
     }
 
     span {
-        font-size: 55px;
-        line-height: 300%;
+        font-size: 70px;
+        line-height: 280%;
         font-weight: bold;
 
         @media (min-width: 270px) and (max-width: 479px) {
@@ -210,7 +211,7 @@ section {
 
 @media (min-width: 270px) and (max-width: 479px) {
     .hero {
-        left: -17rem;
+        left: -12rem;
     }
 
     .colorshader {
@@ -237,7 +238,6 @@ section {
         span {
             white-space: nowrap;
             font-size: 16px;
-            // margin-left: -35px;
         }
     }
 
@@ -276,6 +276,10 @@ section {
         left: -10rem;
     }
 
+    .colorshader {
+        left: -40%;
+    }
+
     .main-text {
         margin-top: 820px;
         margin-bottom: 190px;
@@ -309,6 +313,10 @@ section {
         left: -10%;
     }
 
+    .colorshader {
+        left: -15%;
+    }
+
     .main-text {
         margin-top: 820px;
         margin-bottom: 190px;
@@ -336,8 +344,8 @@ section {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+@media (min-width: 992px) and (max-width: 1600px) {
     .main-text {
-        padding: 0;
+        padding-right: 0;
     }
 }
