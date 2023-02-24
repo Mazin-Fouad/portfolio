@@ -11,4 +11,8 @@ export class NavbarComponent {
   setActiveTab(tab: string) {
     this.activeTab = tab;
   }
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
