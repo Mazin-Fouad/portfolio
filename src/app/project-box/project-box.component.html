@@ -7,17 +7,22 @@
         src="{{ project.img }}"
       />
 
-      <div class="project-text d-flex flex-column">
+      <div class="project-text d-flex flex-column position-relative">
         <h1 class="mb-2">{{ project.title }}</h1>
+        <img
+          class="new-icon position-absolute"
+          src="assets/imgs/project-box-imgs/new.png"
+          *ngIf="project.title === 'Pokédex'"
+        />
         <h2 class="mb-2">{{ project.code }}</h2>
         <span class="mb-2">{{ project.description }}</span>
 
         <div class="projcet-links">
           <a target="_blank" class="live-test" href="{{ project.link }}"
-            >Live test</a
+            >Live Demo</a
           >
           <a target="_blank" class="github" href="{{ project.gitHub }}"
-            >Github</a
+            >GitHub</a
           >
         </div>
       </div>
