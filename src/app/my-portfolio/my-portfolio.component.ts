@@ -17,6 +17,15 @@ export class MyPortfolioComponent {
       gitHub: 'https://github.com/Mazin-Fouad/Join',
     },
     {
+      title: 'Pokédex',
+      code: 'Angular | TypeScript | Anuglar Material | Bootstrap | Rest-API',
+      description:
+        'Explore Pokémon by name or number, and access details on their characteristics, abilities, types, and more.',
+      img: 'assets/imgs/project-box-imgs/pokedex.png',
+      link: 'https://mazinfouad.com/pokedex/',
+      gitHub: 'https://github.com/Mazin-Fouad/pokedex-angular',
+    },
+    {
       title: 'El Pollo Loco',
       code: 'HTML | CSS | JavaScript',
       description:
