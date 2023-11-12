@@ -16,6 +16,17 @@ export class MyPortfolioComponent {
       link: 'https://mazinfouad.com/Join/login.html',
       gitHub: 'https://github.com/Mazin-Fouad/Join',
     },
+
+    {
+      title: 'Trendy',
+      code: 'Angular | TypeScript | Anuglar Material | Bootstrap | Rest-API',
+      description:
+        'Trendy is a chic fashion platform, offering an elegant online space for discovering and purchasing favorite fashion items.',
+      img: 'assets/imgs/project-box-imgs/trendy.png',
+      link: 'https://mazinfouad.com/trendy/',
+      gitHub: 'https://github.com/Mazin-Fouad/Trendy',
+    },
+
     {
       title: 'Pokédex',
       code: 'Angular | TypeScript | Anuglar Material | Bootstrap | Rest-API',
