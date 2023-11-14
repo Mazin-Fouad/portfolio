@@ -28,15 +28,6 @@ export class MyPortfolioComponent {
     },
 
     {
-      title: 'Pokédex',
-      code: 'Angular | TypeScript | Anuglar Material | Bootstrap | Rest-API',
-      description:
-        'Explore Pokémon by name or number, and access details on their characteristics, abilities, types, and more.',
-      img: 'assets/imgs/project-box-imgs/pokedex.png',
-      link: 'https://mazinfouad.com/pokedex/',
-      gitHub: 'https://github.com/Mazin-Fouad/pokedex-angular',
-    },
-    {
       title: 'El Pollo Loco',
       code: 'HTML | CSS | JavaScript',
       description:
@@ -44,16 +35,6 @@ export class MyPortfolioComponent {
       img: 'assets/imgs/project-box-imgs/Pollo-loco .png',
       link: 'https://mazinfouad.com/el_pollo_loco/',
       gitHub: 'https://github.com/Mazin-Fouad/el_pollo_loco',
-    },
-
-    {
-      title: 'Ring Of Fire',
-      code: 'Angular | Typescript | HTML | Scss | Firebase',
-      description:
-        'A popular drinking game, you have to choose a card from the card stack and implement what appears to you in the text.',
-      img: 'assets/imgs/project-box-imgs/ring-of-fire.png',
-      link: 'https://mazinfouad.com/ringoffire/',
-      gitHub: 'https://github.com/Mazin-Fouad/ringoffire',
     },
   ];
 }
