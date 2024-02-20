@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
@@ -7,46 +7,48 @@ import * as AOS from 'aos';
   styleUrls: ['./contact-form-shape.component.scss'],
 })
 export class ContactFormShapeComponent implements OnInit {
-  @ViewChild('contactForm') contactForm!: ElementRef;
-  @ViewChild('nameField') nameField!: ElementRef;
-  @ViewChild('mailField') mailField!: ElementRef;
-  @ViewChild('messageField') messageField!: ElementRef;
-  @ViewChild('sendButton') sendButton!: ElementRef;
+  // Indicates whether the message has been successfully sent
   success: boolean = false;
 
-  ngOnInit() {
+  // Holds the values of the form fields
+  formData = {
+    name: '',
+    email: '',
+    message: '',
+  };
+
+  ngOnInit(): void {
     AOS.init();
   }
 
   async sendMail() {
-    let nameField = this.nameField.nativeElement;
-    let mailField = this.mailField.nativeElement;
-    let messageField = this.messageField.nativeElement;
-    let sendButton = this.sendButton.nativeElement;
+    let formDataToSend = new FormData();
+    formDataToSend.append('name', this.formData.name);
+    formDataToSend.append('email', this.formData.email);
+    formDataToSend.append('message', this.formData.message);
 
-    nameField.disabled = true;
-    messageField.disabled = true;
-    mailField.disabled = true;
-    sendButton.disabled = true;
+    try {
+      const response = await fetch(
+        'https://mazinfouad.com/send_mail/send_mail.php',
+        {
+          method: 'POST',
+          body: formDataToSend,
+        }
+      );
 
-    let formData = new FormData();
-    formData.append('name', nameField.value);
-    formData.append('mail', mailField.value);
-    formData.append('message', messageField.value);
-
-    await fetch('https://mazinfouad.com/send_mail/send_mail.php', {
-      method: 'POST',
-      body: formData,
-    });
-
-    nameField.disabled = false;
-    mailField.disabled = false;
-    messageField.disabled = false;
-    sendButton.disabled = false;
-    this.success = true;
-
-    // setTimeout(() => {
-    //   this.success = false;
-    // }, 4000);
+      if (response.ok) {
+        // Handle success response
+        this.success = true;
+        // Reset formData or perform other success actions
+        this.formData = { name: '', email: '', message: '' };
+        // Optionally, display a success message or redirect the user
+      } else {
+        // Handle non-success response
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // Handle error condition, such as by displaying an error message
+    }
   }
 }

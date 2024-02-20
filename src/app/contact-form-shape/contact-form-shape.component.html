@@ -1,22 +1,42 @@
-<form (submit)="sendMail()" ngNativeValidate #contactForm>
+<form (ngSubmit)="sendMail()" #contactForm="ngForm" ngNativeValidate>
   <div *ngIf="!success">
     <div class="mb-3">
-      <input
-        type="name"
-        name="name"
-        class="form-control mb-4"
-        placeholder="Your Name"
-        required
-        #nameField
-      />
-      <input
-        type="email"
-        name="email"
-        class="form-control mb-4"
-        placeholder="Your Email"
-        required
-        #mailField
-      />
+      <div class="mb-4">
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          placeholder="Your Name"
+          required
+          [(ngModel)]="formData.name"
+          #nameField="ngModel"
+        />
+        <!-- Display error message if the name field is touched but not filled -->
+        <span
+          *ngIf="nameField.touched && nameField.invalid"
+          class="error-message"
+        >
+          Name is required
+        </span>
+      </div>
+      <div class="mb-4">
+        <input
+          type="email"
+          name="email"
+          class="form-control"
+          placeholder="Your Email"
+          required
+          [(ngModel)]="formData.email"
+          #mailField="ngModel"
+        />
+        <!-- Display error message if the email field is touched but not filled -->
+        <div
+          *ngIf="mailField.touched && mailField.invalid"
+          class="error-message"
+        >
+          Email is required
+        </div>
+      </div>
     </div>
     <div class="mb-4">
       <textarea
@@ -25,11 +45,22 @@
         name="message"
         placeholder="Your Message"
         required
-        #messageField
+        [(ngModel)]="formData.message"
+        #messageField="ngModel"
       ></textarea>
+      <!-- Display error message if the message field is touched but not filled -->
+      <div
+        *ngIf="messageField.touched && messageField.invalid"
+        class="error-message"
+      >
+        Message is required
+      </div>
     </div>
     <div class="btn-container">
-      <button #sendButton class="btn-contact">Send message ;)</button>
+      <!-- Disable the send button if the form is invalid -->
+      <button [disabled]="contactForm.invalid" class="btn-contact">
+        Send message ;)
+      </button>
     </div>
   </div>
   <div *ngIf="success" class="alert alert-success mt-3">
